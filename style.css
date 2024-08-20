@@ -1,0 +1,52 @@
+html,
+body {
+  font-size: 100%;
+  margin: 0;
+} /* user's default. use rem to set other fonts relative to it */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+} /* make box sizing more predictable! */
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 20em;
+    padding: 100px;
+    margin: 0;
+    user-select: none;
+}
+
+h2:hover {
+    cursor: pointer;
+}
+
+.counterDiv {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 450px) {
+    h2 {
+        font-size: 10rem;
+    }
+}
